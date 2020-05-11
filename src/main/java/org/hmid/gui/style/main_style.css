@@ -1,0 +1,29 @@
+* {
+    -fx-background-color: #696969;
+    -fx-font-family: "Roboto Mono Medium", Arial;
+}
+
+.main-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 30pt;
+}
+
+.country-title {
+    -fx-font-size: 16pt;
+    -fx-fill: white;
+}
+
+.content-text {
+    -fx-font-size: 14pt;
+    -fx-fill: white;
+}
+
+.context-menu {
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+    -fx-background-color: aliceblue;
+}
+
+.menu-item:focused {
+    -fx-background-color: mediumpurple;
+}

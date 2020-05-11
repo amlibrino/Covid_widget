@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="153.0" prefWidth="375.0" stylesheets="@../style/main_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hmid.gui.widget.WidgetController">
+    <children>
+        <VBox spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <Label styleClass="main-title" text="Infos sur le Covid19" textFill="white">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </VBox.margin></Label>
+                <HBox alignment="CENTER_LEFT" spacing="20.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content-text" text="Monde">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Text>
+                        <Text fx:id="textGlobalReport" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content-text" text="Cas: ... | Guéris: ... | Morts: ...">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Text>
+                    </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="27.0" spacing="20.0" styleClass="country-title">
+                    <children>
+                        <Text fx:id="textCountryCode" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="country-title" text="France" />
+                        <Text fx:id="textCountryReport" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="country-title" text="Cas: ... | Guéris: ... | Morts: ..." />
+                    </children>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
